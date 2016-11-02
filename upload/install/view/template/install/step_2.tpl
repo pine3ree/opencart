@@ -43,34 +43,6 @@
                   <?php } ?></td>
               </tr>
               <tr>
-                <td><?php echo $text_global; ?></td>
-                <td><?php if ($register_globals) { ?>
-                  <?php echo $text_on; ?>
-                  <?php } else { ?>
-                  <?php echo $text_off; ?>
-                  <?php } ?></td>
-                <td><?php echo $text_off; ?></td>
-                <td class="text-center"><?php if (!$register_globals) { ?>
-                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
-                  <?php } else { ?>
-                  <span class="text-danger"><i class="fa fa-minus-circle"></i></span>
-                  <?php } ?></td>
-              </tr>
-              <tr>
-                <td><?php echo $text_magic; ?></td>
-                <td><?php if ($magic_quotes_gpc) { ?>
-                  <?php echo $text_on; ?>
-                  <?php } else { ?>
-                  <?php echo $text_off; ?>
-                  <?php } ?></td>
-                <td><?php echo $text_off; ?></td>
-                <td class="text-center"><?php if (!$magic_quotes_gpc) { ?>
-                  <span class="text-success"><i class="fa fa-check-circle"></i></span>
-                  <?php } else { ?>
-                  <span class="text-danger"><i class="fa fa-minus-circle"></i></span>
-                  <?php } ?></td>
-              </tr>
-              <tr>
                 <td><?php echo $text_file_upload; ?></td>
                 <td><?php if ($file_uploads) { ?>
                   <?php echo $text_on; ?>
