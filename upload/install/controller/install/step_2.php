@@ -31,8 +31,6 @@ class ControllerInstallStep2 extends Controller {
 		$data['text_writable'] = $this->language->get('text_writable');
 		$data['text_unwritable'] = $this->language->get('text_unwritable');
 		$data['text_version'] = $this->language->get('text_version');
-		$data['text_global'] = $this->language->get('text_global');
-		$data['text_magic'] = $this->language->get('text_magic');
 		$data['text_file_upload'] = $this->language->get('text_file_upload');
 		$data['text_session'] = $this->language->get('text_session');
 		$data['text_db'] = $this->language->get('text_db');
