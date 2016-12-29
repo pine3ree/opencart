@@ -5,9 +5,9 @@ class Action {
 	private $method = 'index';
 
 	public function __construct($route) {
-		$this->id = $route;
+		$this->id = (string)$route;
 		
-		$parts = explode('/', preg_replace('/[^a-zA-Z0-9_\/]/', '', (string)$route));
+		$parts = explode('/', preg_replace('/[^a-zA-Z0-9_\/]/', '', $this->id));
 
 		// Break apart the route
 		while ($parts) {
