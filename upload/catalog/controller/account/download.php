@@ -131,7 +131,7 @@ class ControllerAccountDownload extends Controller {
 						ob_end_clean();
 					}
 
-					readfile($file, 'rb');
+					readfile($file);
 
 					$this->model_account_download->addDownloadReport($download_id, $this->request->server['REMOTE_ADDR']);
 
